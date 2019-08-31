@@ -33,6 +33,12 @@ public class TestHello {
 		.map(j -> j*j)
 		.collect(toList());
 		System.out.println(list);
+		
+		//Even/Odd numbers
+		List<Integer> lists=Arrays.asList(1,2,3,4,5,6,7,8);
+		lists.stream()
+		.filter(n -> n%2==0)
+		.forEach(x1 -> System.out.println(x1));
 	}
 
 }
